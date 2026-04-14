@@ -4,7 +4,7 @@ A personal portfolio site for Ekhsan Fitri, focused on business, procurement, an
 
 ## Overview
 
-This site highlights current projects, core skills, education, and internship experience in a simple one-page layout.
+This site highlights current projects, core skills, education, and procurement experience, including a 1-year contract role after internship, in a simple one-page layout.
 
 ## Features
 
