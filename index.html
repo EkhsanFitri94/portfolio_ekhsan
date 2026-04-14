@@ -3,70 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Ekhsan</title>
+    <meta name="description" content="Ekhsan Fitri's portfolio highlighting business, procurement, analytics, and Python projects.">
+    <title>Ekhsan Fitri | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <!-- Header Section -->
-    <div class="header">
-        <img src="profile.jpg" alt="Ekhsan Profile Picture" class="profile-pic">
-        <div>
-            <h1>Hi, I'm Ekhsan</h1>
-            <p>Final-year BBA (Hons) Student majoring in Artificial Intelligence. Currently an Intern in Procurement Department.</p>
-        </div>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#home">Ekhsan Fitri</a>
+            <nav class="nav" aria-label="Primary">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="button ghost" id="theme-toggle" type="button">Toggle theme</button>
+        </header>
+
+        <main id="home">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Business, AI, and product-minded builder</p>
+                    <h1>Hi, I'm Ekhsan.</h1>
+                    <p class="lead">
+                        Final-year BBA (Hons) student majoring in Artificial Intelligence,
+                        currently building practical tools for procurement, analytics, and learning.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#contact">Contact me</a>
+                        <button class="button secondary" id="copy-email" type="button">Copy email</button>
+                    </div>
+                    <div class="hero-meta" aria-label="Quick facts">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                        <span>HTML/CSS/JS</span>
+                    </div>
+                </div>
+
+                <aside class="profile-card" aria-label="Profile summary">
+                    <img src="profile.jpg" alt="Ekhsan Fitri profile picture" class="profile-pic">
+                    <div class="status-pill">Open to opportunities</div>
+                    <p>
+                        Focused on procurement workflows, analytics, and building simple tools that solve real problems.
+                    </p>
+                    <div class="mini-grid">
+                        <div>
+                            <strong>2026</strong>
+                            <span>Expected graduation</span>
+                        </div>
+                        <div>
+                            <strong>1</strong>
+                            <span>Main portfolio repo</span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="projects" class="section-block">
+                <div class="section-heading">
+                    <p>Featured work</p>
+                    <h2>Projects I am actively shaping</h2>
+                </div>
+
+                <div class="card-grid">
+                    <article class="card featured">
+                        <span class="card-tag">In progress</span>
+                        <h3>Procurement Tracker App</h3>
+                        <p>
+                            An app to track vendor payments, invoices, and procurement reports.
+                            Built to make daily operations easier to follow.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Learning series</span>
+                        <h3>Python Mini Projects</h3>
+                        <p>
+                            Small coding projects like games, automation scripts, and dashboard prototypes.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Research</span>
+                        <h3>AI Research & Reports</h3>
+                        <p>
+                            Research work on unemployment, operations management, and AI in business strategy.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="section-block split-layout">
+                <div class="section-heading">
+                    <p>Capabilities</p>
+                    <h2>Tools and frameworks I use</h2>
+                </div>
+
+                <div class="panel">
+                    <div class="pill-list">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>SWOT</span>
+                        <span>PESTEL</span>
+                        <span>BCG Matrix</span>
+                        <span>McKinsey 7S</span>
+                        <span>AI strategy</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section-block split-layout">
+                <div class="section-heading">
+                    <p>Background</p>
+                    <h2>Education and experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="timeline-label">Education</span>
+                        <h3>Bachelor of Business Administration (Hons)</h3>
+                        <p>Major in Artificial Intelligence at Universiti [UniRazak KL], Malaysia. Expected graduation: 2026.</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-label">Experience</span>
+                        <h3>Business Administration Intern, Procurement Department</h3>
+                        <p>Universal Cellular Engineering Services Sdn Bhd, Jun 2025 to Dec 2025.</p>
+                        <ul>
+                            <li>Assisted procurement operations and vendor management</li>
+                            <li>Supported purchase order and invoice tracking</li>
+                            <li>Explored AI applications in procurement workflows</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section-block contact-card">
+                <div>
+                    <p>Contact</p>
+                    <h2>Reach out if you want to collaborate</h2>
+                    <p>
+                        I am best reached by email. You can also open my GitHub profile if you want to see the current work in progress.
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+                    <a class="button primary" href="mailto:ekhsanfitri123@email.com">Email me</a>
+                    <a class="button secondary" href="https://github.com/EkhsanFitri94" target="_blank" rel="noreferrer">GitHub profile</a>
+                    <p id="status" class="status-text" aria-live="polite">Ready when you are.</p>
+                </div>
+            </section>
+        </main>
     </div>
 
-    <!-- Projects Section -->
-    <h2>My Projects</h2>
-    <div class="projects">
-        <div class="card">
-            <h3>Procurement Tracker App</h3>
-            <p>An app to track vendor payments, invoices, and procurement reports. (In progress)</p>
-        </div>
-        <div class="card">
-            <h3>Python Mini Projects</h3>
-            <p>Small coding projects like games, automation scripts, and dashboard prototypes.</p>
-        </div>
-        <div class="card">
-            <h3>AI Research & Reports</h3>
-            <p>Research papers on unemployment, operations management, and AI in business strategy.</p>
-        </div>
-    </div>
-
-    <!-- Skills Section -->
-    <h2>Skills</h2>
-    <ul>
-        <li>Python, SQL, Excel, Power BI</li>
-        <li>HTML, CSS, JavaScript (Learning)</li>
-        <li>Business Frameworks (SWOT, PESTEL, BCG Matrix, McKinsey 7S)</li>
-        <li>AI Integration in Business Strategy</li>
-    </ul>
-
-    <!-- Education Section -->
-    <h2>Education</h2>
-    <p>Bachelor of Business Administration (Hons) – Major in Artificial Intelligence  
-    Universiti [UniRazak KL], Malaysia (Expected Graduation: 2026)</p>
-
-    <!-- Experience Section -->
-    <h2>Experience</h2>
-    <p><strong>Business Administration Intern – Procurement Department</strong><br>
-    Universal Cellular Engineering Services Sdn Bhd (Jun 2025 – Dec 2025)</p>
-    <ul>
-        <li>Assisting procurement operations & vendor management</li>
-        <li>Supporting purchase order and invoice tracking</li>
-        <li>Exploring AI applications in procurement process</li>
-    </ul>
-
-    <!-- Contact Section -->
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:ekhsanfitri123@email.com">ekhsanfitri123@email.com</a></p>
-
-    <!-- Interactive Section -->
-    <h2>Try My Features</h2>
-    <button onclick="showMessage()">Say Hello</button>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
