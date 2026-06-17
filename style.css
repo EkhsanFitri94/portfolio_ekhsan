@@ -313,6 +313,54 @@ body[data-theme='dark'] .mini-grid div {
     font-size: 1.45rem;
 }
 
+.card-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.card-pills span {
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(31, 111, 120, 0.08);
+    color: var(--primary-strong);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: color 180ms ease;
+}
+
+.card-link:hover {
+    color: var(--primary-strong);
+}
+
+.skill-group {
+    margin-bottom: 18px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group h4 {
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--secondary);
+}
+
 .split-layout {
     display: grid;
     grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
